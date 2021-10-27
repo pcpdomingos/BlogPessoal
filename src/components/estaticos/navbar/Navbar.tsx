@@ -4,21 +4,25 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import "./Navbar.css"
-import { Box } from '@mui/system';
+import Box from '@mui/material/Box';
 
-function NavBar(){
+function NavBar() {
   return (
     <div>
-      <AppBar position="static">
+      <AppBar className="colorAppBar" position="static">
         <Toolbar>
-          <Typography variant="h6">
-            BlogPessoal
-          </Typography>
-          <Button color="inherit">Postagens</Button>
-          <Button color="inherit">Tema</Button>
-          <Button color="inherit">Cadastrar-tema</Button>
-          <Button color="inherit">Login</Button>
-          
+          <Box>
+            <Typography variant="h6">
+              BlogPessoal
+            </Typography>
+          </Box>
+
+          <Box ml="auto" className="colorBottom">
+            <Button className="colorText">Postagens</Button>
+            <Button className="colorText">Temas</Button>
+            <Button className="colorText">Login</Button>
+          </Box>
+
         </Toolbar>
       </AppBar>
     </div>

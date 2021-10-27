@@ -1,3 +1,16 @@
 .titulo {
     text-align: center;
 }
+
+.colorAppBar {
+    background-color: black!important;
+}
+
+.colorBottom {
+    border-style: solid;
+    border-bottom-color: #CF95D8;
+}
+
+.colorText {
+    color: white !important;
+}

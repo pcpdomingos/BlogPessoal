@@ -10,6 +10,16 @@
     margin: 0 auto;
 }
 
-.cor-do-botao {
-    background-color: blueviolet!important;
+.corBackground {
+    background-image: url("https://i.imgur.com/LyVmDYD.jpg");
+    background-color: #cccccc;
+}
+
+.colorTextFundo {
+    background-color: #E6CDEB;
+}
+
+.colorLetras {
+    color: white;
+    background-color: black;
 }
