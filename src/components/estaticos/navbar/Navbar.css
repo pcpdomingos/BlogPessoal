@@ -14,3 +14,7 @@
 .colorText {
     color: white !important;
 }
+
+.text-decorator-none {
+    text-decoration: none;
+}

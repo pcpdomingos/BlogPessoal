@@ -12,21 +12,27 @@ function Home() {
                     <Box display="flex" alignItems="center" sx={{ width: '100%', minHeight: '90vh' }}>
                         <Box p={3} >
                             <Box display="flex" justifyContent="center" className="colorLetras">
-                                <Typography variant="h4" >
+                                <Typography variant="h4" style={{ fontWeight: 'bold' }} >
                                     Bem vinde ao meu blog!
                                 </Typography>
                             </Box>
-                            <Box >
-                                <Typography variant="body1" textAlign="center" className="colorLetras">
+                           
+                            <Box>
+                                <Typography variant="body1" textAlign="center" className="colorLetras" >
                                     <p>Meu nome é Eduardo e estou me tornando um desenvolvedor Java Full-Stack. Essa é a minha primeira experiência com front-end.</p>
                                 </Typography>
+                                
+                                <Box marginTop={2} textAlign='center'>
+                                    <Button type='submit' variant='contained' color='primary'>
+                                        Cadastrar tema
+                                    </Button>
+                                </Box>
+                                   
                             </Box>
 
                         </Box>
 
-
                     </Box>
-
 
                 </Grid>
                 <Grid item xs={6} style={{ minHeight: "90vh" }}>
