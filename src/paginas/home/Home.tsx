@@ -2,7 +2,6 @@ import React from 'react';
 import './Home.css';
 import { Button, Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import InstagramIcon from '@material-ui/icons/Instagram';
 
 function Home() {
     return (
