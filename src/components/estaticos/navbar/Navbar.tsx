@@ -35,11 +35,11 @@ function Navbar() {
             </Link>
 
             <Link to="/posts" className="text-decorator-none">
-            <Button className="colorText">Postagens</Button>
+              <Button className="colorText">Postagens</Button>
             </Link>
-            
+
             <Link to="/temas" className='text-decorator-none'>
-            <Button className="colorText">Temas</Button>
+              <Button className="colorText">Temas</Button>
             </Link>
 
             <Link to="/Login" className='text-decorator-none'>
