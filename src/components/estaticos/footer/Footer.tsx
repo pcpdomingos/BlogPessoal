@@ -1,7 +1,7 @@
-import { AppBar, Box, Container, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Box, Container, Toolbar, Typography } from '@mui/material';
 import React from 'react';
 import "./Footer.css";
-import InstagramIcon from '@material-ui/icons/Instagram';
+
 
 function Footer(): JSX.Element {
   return (
