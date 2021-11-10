@@ -1,7 +1,18 @@
-.colorBackground {
-    background-color: black!important;
+.box1 {
+    background-color: #000000;
+    height: 100px;
 }
 
-.centralizar {
-    text-align: center;
+.box2 {
+    background-color: black;
+    height: 60px;
+}
+
+.redes {
+    font-size: 60px !important;
+    color: white;
+}
+
+.textos {
+    color: white;
 }

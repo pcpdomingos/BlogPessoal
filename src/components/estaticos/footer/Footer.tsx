@@ -1,24 +1,51 @@
-import { AppBar, Box, Container, Toolbar, Typography } from '@mui/material';
 import React from 'react';
-import "./Footer.css";
+import InstagramIcon from '@material-ui/icons/Instagram';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import {Typography, Box, Grid } from '@material-ui/core';
+import './Footer.css';
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReduce';
 
 
-function Footer(): JSX.Element {
-  return (
-    <>
-      <AppBar style={{ marginTop:"10px" }} position="static" className="colorBackground">
-        <Container maxWidth="md">
-          <Toolbar>
-          <Box display="flex" alignItems="center" justifyContent="center">
-            <Typography>
-              
-            </Typography>
+function Footer() {
+
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+    );
+
+    var footerComponent;
+
+    if(token != ""){
+        footerComponent = <Grid container direction="row" justifyContent="center" alignItems="center">
+        <Grid alignItems="center" item xs={12}>
+            <Box className='box1'>
+                <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
+                    <Typography variant="h5" align="center" gutterBottom className='textos'>Conecte-me no linkedin</Typography>
+                </Box>
+                <Box display="flex" alignItems="center" justifyContent="center">
+                    <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                        <LinkedInIcon className='redes' />
+                    </a>
+                </Box>
             </Box>
-          </Toolbar>
-        </Container>
-      </AppBar>
-    </>
-  )
+            <Box className='box2'>
+                <Box paddingTop={1}>
+                    <Typography variant="subtitle2" align="center" gutterBottom className='textos' >© 2021 Copyright:</Typography>
+                </Box>
+                <Box>
+                        <Typography variant="subtitle2" gutterBottom className='textos' align="center">Eduardo Domingos de Oliveira</Typography>
+
+                </Box>
+            </Box>
+        </Grid>
+    </Grid>
+    }
+    return (
+        <>
+            {footerComponent}
+        </>
+    )
 }
 
 export default Footer;

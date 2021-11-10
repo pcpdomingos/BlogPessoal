@@ -1,11 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import { Grid, Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import TabPostagem from '../../components/postagens/tabpostagens/TabPostagem';
+import { useSelector } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import { TokenState } from '../../store/tokens/tokensReduce';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
+import TabPostagem from '../../components/postagens/tabpostagens/TabPostagem';
 
 function Home() {
+    let history = useHistory();
+    const token = useSelector<TokenState, TokenState["tokens"]>(//useSelector acessa o store para pegar o token e atribuir a constante "token"
+        (state) => state.tokens//
+    );
+
+    useEffect(() => {
+        if (token == "") {//identifica se o token está vazio, caso esteja envia o alerta abaixo e redireciona para o login, caso contrário segue o processo
+            alert("Você precisa estar logado")
+            history.push("/login")
+
+        }
+    }, [token])
     return (
         <div style={{ minHeight: "90vh", marginTop: "10px" }} className="corBackground">
             <Grid container>
@@ -16,15 +31,11 @@ function Home() {
                                 <Typography variant="h4" style={{ fontWeight: 'bold' }} >
                                     Bem vinde ao meu blog!
                                 </Typography>
-                            </Box>
-                            <Box marginRight={1}>
+                                <Box marginRight={1} justifyContent='center'>
                                 <ModalPostagem />
                             </Box>
+                            </Box>
                             <Box>
-                                <Typography variant="body1" textAlign="center" className="colorLetras" >
-                                    <p>Meu nome é Eduardo e estou me tornando um desenvolvedor Java Full-Stack. Essa é a minha primeira experiência com front-end.</p>
-                                </Typography>
-
                                 <Grid xs={12} className='postagens'>
                                     <TabPostagem />
                                 </Grid>
