@@ -10,6 +10,7 @@ import './Navbar.css'
 import { useDispatch, useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReduce';
 import { addToken } from '../../../store/tokens/actions';
+import { toast } from 'react-toastify';
 
 function Navbar() {
   const token = useSelector<TokenState, TokenState["tokens"]>(//useSelector acessa o store para pegar o token e atribuir a constante "token"
@@ -20,7 +21,16 @@ function Navbar() {
 
   function goLogout() {
     dispatch(addToken(''));//caso o token esteja vazio
-    alert("Usuário deslogado")//alerta
+    toast.info('Usuário deslogado', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: false,
+      theme: "colored",
+      progress: undefined,
+    });//alerta
     history.push('/login')//direciona para a página de login
   }
 
@@ -47,12 +57,12 @@ function Navbar() {
           <Link to='/temas' className='text-decorator-none'>
             <Button className="colorText">Temas</Button>
           </Link>
-          
+
           <Link to="/formularioTema" className="text-decorator-none">
             <Button className="colorText">Cadastrar temas</Button>
           </Link>
-        
-          <Link to='/Login' className='text-decorator-none'>
+
+          <Link to='/Login' className='text-decorator-none' onClick={goLogout}>
             <Button className="colorText">Logout</Button>
           </Link>
 

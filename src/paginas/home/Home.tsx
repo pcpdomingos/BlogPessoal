@@ -7,6 +7,7 @@ import { useHistory } from 'react-router-dom';
 import { TokenState } from '../../store/tokens/tokensReduce';
 import ModalPostagem from '../../components/postagens/modalPostagem/ModalPostagem';
 import TabPostagem from '../../components/postagens/tabpostagens/TabPostagem';
+import { toast } from 'react-toastify';
 
 function Home() {
     let history = useHistory();
@@ -16,7 +17,16 @@ function Home() {
 
     useEffect(() => {
         if (token == "") {//identifica se o token está vazio, caso esteja envia o alerta abaixo e redireciona para o login, caso contrário segue o processo
-            alert("Você precisa estar logado")
+            toast.error('Você precisa estar logado', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
+            });
             history.push("/login")
 
         }
