@@ -37,6 +37,7 @@ function CadastroPost() {
     const [tema, setTema] = useState<Tema>(
         {
             id: 0,
+            nome: '',
             descricao: ''
         })
     const [postagem, setPostagem] = useState<Postagem>({
@@ -61,7 +62,7 @@ function CadastroPost() {
     }, [id])
 
     async function getTemas() {
-        await busca("/tema", setTemas, {
+        await busca("/temas", setTemas, {
             headers: {
                 'Authorization': token
             }

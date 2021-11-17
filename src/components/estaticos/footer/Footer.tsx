@@ -24,7 +24,7 @@ function Footer() {
                     <Typography variant="h5" align="center" gutterBottom className='textos'>Conecte-me no linkedin</Typography>
                 </Box>
                 <Box display="flex" alignItems="center" justifyContent="center">
-                    <a href="https://www.linkedin.com/school/generationbrasil/" target="_blank">
+                    <a href="https://www.linkedin.com/in/eduardo-domingos-677247220/" target="_blank">
                         <LinkedInIcon className='redes' />
                     </a>
                 </Box>
