@@ -1,5 +1,5 @@
 # blogPessoalReact
-Projeto realizado em pararelo ao bootcamp da Generation Brasil.
+Projeto realizado em pararelo ao bootcamp da Generation Brasil
 (Em construção 👨🏽‍💻)
 
 # Sobre
