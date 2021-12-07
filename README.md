@@ -43,3 +43,11 @@ Repositores:
 Security:
 
 - Trata-se da parte responsável pela segurança dos dados. (endpoints públicos, privados, etc.)
+
+# Validações e segurança
+
+Todos os enpoints possuem validações de diversos tipos, tais como:
+
+- Verificação se todos os dados da requisição foram informados corretamente
+- Verificação se as informações do cliente batem com as informações enviadas
+- Controle de rotas autenticadas e públicas
