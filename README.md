@@ -7,8 +7,11 @@ O projeto consiste em uma API REST que realiza as funções de um blog a partir 
 
 # Tecnologias utilizadas
 • Java
+
 • Spring Boot
+
 • Spring Security
+
 • Swagger
 
 # Funcionalidades
