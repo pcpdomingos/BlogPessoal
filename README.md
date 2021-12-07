@@ -42,4 +42,4 @@ Repositores:
 
 Security:
 
-- Literalmente a configuração de segurança do projeto. (endpoints públicos, privados, etc.)
+- Trata-se da parte responsável pela segurança dos dados. (endpoints públicos, privados, etc.)
