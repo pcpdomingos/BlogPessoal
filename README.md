@@ -1,5 +1,6 @@
-# blogPessoalReact (Em construção 👨🏽‍💻)
+# blogPessoalReact
 Projeto realizado em pararelo ao bootcamp da Generation Brasil.
+(Em construção 👨🏽‍💻)
 
 # Sobre
 O projeto consiste em uma API REST que realiza as funções de um blog a partir de requisições HTTP enviada pelo usuário.
