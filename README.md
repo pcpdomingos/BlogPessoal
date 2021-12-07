@@ -34,12 +34,12 @@ Como o nome diz, elas são as classes modelo que tem como função definir o dom
 
 Services:
 
-Os services são utilizadps para processar toda a lógica do negócio.
+- Os services são utilizadps para processar toda a lógica do negócio.
 
 Repositores:
 
-rata-se da camada de persistência dos dados. As lógicas se limitam às próprias necessidades. Aqui os dados são recebidos, persistidos ou retornados.
+- Trata-se da camada de persistência dos dados. As lógicas se limitam às próprias necessidades. Aqui os dados são recebidos, persistidos ou retornados.
 
 Security:
 
-Literalmente a configuração de segurança do projeto. (endpoints públicos, privados, etc.)
+- Literalmente a configuração de segurança do projeto. (endpoints públicos, privados, etc.)
