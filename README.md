@@ -38,7 +38,7 @@ Services:
 
 Repositores:
 
-- Trata-se da camada de persistência dos dados. As lógicas se limitam às próprias necessidades. Aqui os dados são recebidos, persistidos ou retornados.
+- Aqui os dados são recebidos, persistidos ou retornados.  Essa é a camada de persistência dos dados. As lógicas se limitam às próprias necessidades.
 
 Security:
 
