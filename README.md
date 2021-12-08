@@ -26,7 +26,7 @@ Como o nome diz, elas são as classes modelo que tem como função definir o dom
 
 Services:
 
-- Os services são utilizadps para processar toda a lógica do negócio.
+- Os services são utilizados para processar toda a lógica do negócio.
 
 Repositores:
 
