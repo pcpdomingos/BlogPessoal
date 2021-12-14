@@ -21,7 +21,7 @@ O projeto consiste em uma API REST que realiza as funções de um blog a partir 
 <li>Realização de login</li>
 <li>Criação/Edição/Delete de temas</li>
 <li>Criação/Edição/Delete de postagens</li>
-<li>Criação/Edição/Delete de usuários</li>
+<li>Criação de usuários</li>
 </ul>
 
 
