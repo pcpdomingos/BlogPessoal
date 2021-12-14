@@ -1,7 +1,7 @@
 <h1>Blog Pessoal</h1>
 
 
-<p>Projeto pessoal para treinos de aprendizagem, ou seja, ele sempre estará em mudanças 👨‍💻</p>
+<p>Projeto pessoal para treinos de aprendizagem, ou seja, ele sempre estará em mudanças. 👨‍💻</p>
 <h2>Sobre</h2>
 O projeto consiste em uma API REST que realiza as funções de um blog a partir de requisições HTTP enviada pelo usuário.
 
