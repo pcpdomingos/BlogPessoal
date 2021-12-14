@@ -27,25 +27,25 @@ O projeto consiste em uma API REST que realiza as funções de um blog a partir 
 ## Estrutura de pastas e suas responsabilidades
 
 #### Models
-Como o nome já diz, são as classes modelo. Elas que definem o domínio da aplicação, além da relação entre as entidades.
+Model são as classes responsáveis pelo domínio da aplicação e também da relação entre as entidades.
 
 #### Services
-Os services são chamados para processar toda a lógica do negócio.
+A camada de serviço são criadas para processar a lógica de negócio.
 
 #### Repositories
-Trata-se da camada de persistência dos dados. As lógicas se limitam às próprias necessidades. Aqui os dados são recebidos, persistidos ou retornados.
+Trata-se da persistência dos dados. As lógicas se limitam às próprias necessidades. Aqui os dados são recebidos, persistidos ou retornados.
 
 #### security
-Literalmente a configuração de segurança do projeto. (endpoints públicos, privados, etc.)
+Envolve toda a parte de segurança do projeto. (endpoints públicos, privados, etc.)
 
 ## Validações e segurança
 
 **Todos os enpoints possuem validações de diversos tipos, tais como:**
 
 - Verificação se todos os dados da requisição foram informados corretamente
-- Verificação se as informações do cliente batem com as informações enviadas 
+- Verificação se as informações do cliente coincidem com as informações enviadas 
 - Controle de rotas autenticadas e públicas
 
 #### Encriptação da senha e login
 
-Sim! As senhas estão sendo gravadas encriptadas! Logo o login também está bem seguro :).
+As senhas passam por um sistema de criptografia então seu login estará seguro.
